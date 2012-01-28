@@ -173,9 +173,8 @@
                 only provide the Axon library itself, while others also provide the libraries that
                 Axon depends on. There is also a "full" zip file, which contains Axon, its
                 dependencies, the sources and the documentation, all in a single download. </para>
-            <para>If you really want to stay on the bleeding edge of development, you can also
-                checkout the sources from the GitHub repository:
-                    <uri>https://github.com/AxonFramework/AxonFramework</uri>. </para>
+            <para>If you really want to stay on the bleeding edge of development, you can clone the
+                Git repository: <uri>git://github.com/AxonFramework/AxonFramework.git</uri>, or visit <uri>https://github.com/AxonFramework/AxonFramework</uri> to browse the sources online. </para>
         </sect2>
         <sect2>
             <title>Configure Maven</title>
@@ -191,23 +190,6 @@
                 additional dependencies. We have chosen not to add these dependencies by default, as
                 they would potentially clutter your project with artifacts you don't need. This
                 section discusses these dependencies and describes in what scenarios you need them. </para>
-            <simplesect>
-                <title>Spring Integration</title>
-                <para>The Axon Framework provides connectors that allow you to publish events on a
-                    Spring Integration channel. These connectors require Spring Integration on the
-                    classpath. You need the following maven dependencies to use these connectors.
-                    Axon was compiled against Spring Integration 2.</para>
-                <programlisting language="xml"><![CDATA[<dependency>
-    <groupId>org.axonframework</groupId>
-    <artifactId>axon-integration</artifactId>
-    <version>2.0</version>
-</dependency>
-<dependency>
-    <groupId>org.springframework.integration</groupId>
-    <artifactId>spring-integration-core</artifactId>
-    <version><!-- Add version here --></version>
-</dependency>]]></programlisting>
-            </simplesect>
         </sect2>
         <sect2>
             <title>Infrastructure requirements</title>
