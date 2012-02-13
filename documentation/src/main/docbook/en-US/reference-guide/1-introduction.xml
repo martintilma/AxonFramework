@@ -89,14 +89,12 @@
                 multi-threading concerns are typically hard to deal with, leading to hard-to-trace
                 bugs and sometimes complete application failure. When you have a tight deadline, you
                 probably don't even want to care about these concerns. Axon's code is thoroughly
-                tested to prevent these types of bugs. </para>
-            <para>Most of the concerns Axon addresses are located within a single JVM. However, for
-                an application to be scalable, a single JVM is not enough. Therefore, Axon provides
-                the <code>axon-intregration</code> module, which allows events to be sent to a
-                Spring Integration channel. From there, you can use Spring Integration to dispatch
-                events to application components on different machines. In the near future, Axon
-                will provide more ways to dispatch commands and events between JVM's and physical
-                machines. </para>
+                tested to prevent these types of bugs.</para>
+            <para>The Axon Framework consists of a number of modules (jars) that provide the tools
+                and components to build a scalable infrastructure. The Axon Core module provides the
+                basic API's for the different components, and simple implemenatinos that provide
+                solutions for single-JVM applications. The other modules address scalability or
+                high-performance issues, by providing specialized building blocks.</para>
         </sect2>
         <sect2>
             <title>When to use Axon?</title>
